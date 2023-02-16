@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="inventapp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/inventapp.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
