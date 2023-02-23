@@ -4,69 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f719ba14-4f41-4ec9-bd17-ce8d9a703935" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/inventappAPI/controllers/history/historycontroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventappAPI/controllers/inventary/inventarycontroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventappAPI/controllers/product/productcontroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventappAPI/controllers/user/usercontroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventappAPI/inventapp/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventappAPI/inventapp/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventappAPI/inventapp/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventappAPI/inventapp/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventappAPI/inventapp/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventappAPI/inventapp/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventappAPI/inventapp/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventappAPI/inventapp/src/main/java/com/uco/inventapp/InventappApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventappAPI/inventapp/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventappAPI/inventapp/src/test/java/com/uco/inventapp/InventappApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventapp/inventapp/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventapp/inventapp/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventapp/inventapp/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventapp/inventapp/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventapp/inventapp/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventapp/inventapp/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventapp/inventapp/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventapp/inventapp/src/main/java/com/uco/inventapp/InventappApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventapp/inventapp/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventapp/inventapp/src/test/java/com/uco/inventapp/InventappApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="4402cebc-a564-4d95-85ba-a3a9a3a35bee" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
   </component>
-  <component name="ProjectId" id="2LnjiFD49VK9E2GOPy4fuMfQZzN" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2LnjCe4vPspbuVwaX8xXSPXhEmr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ksmp1/Documents/GitHub/InventApp&quot;
-  }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ksmp1\Documents\GitHub\InventApp\inventappAPI" />
-    </key>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f719ba14-4f41-4ec9-bd17-ce8d9a703935" name="Changes" comment="" />
-      <created>1676513868133</created>
+      <changelist id="4402cebc-a564-4d95-85ba-a3a9a3a35bee" name="Default Changelist" comment="" />
+      <created>1676513620238</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1676513868133</updated>
+      <updated>1676513620238</updated>
     </task>
     <servers />
   </component>
