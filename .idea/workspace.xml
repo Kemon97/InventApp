@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f719ba14-4f41-4ec9-bd17-ce8d9a703935" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/inventappAPI/inventapp/src/controllers/history/historycontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventappAPI/controllers/history/historycontroller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventappAPI/controllers/inventary/inventarycontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventappAPI/inventapp/src/controllers/inventary/inventarycontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventappAPI/controllers/product/productcontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventappAPI/inventapp/src/controllers/product/productcontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventappAPI/controllers/user/usercontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventappAPI/inventapp/src/controllers/user/usercontroller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
