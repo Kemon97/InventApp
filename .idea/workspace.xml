@@ -4,50 +4,119 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f719ba14-4f41-4ec9-bd17-ce8d9a703935" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7987e2e0-ec08-4dd5-a144-a64d73d1bb36" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2LnjiFD49VK9E2GOPy4fuMfQZzN" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
+  <component name="ProjectId" id="2MR9fXYpxxlByeaT1RIVtz0iZw5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ksmp1/Documents/GitHub/InventApp&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Dey/Downloads/inventapp/src/main/java/com/uco/inventapp/inventapp",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "SQL"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ksmp1\Documents\GitHub\InventApp\inventappAPI\inventapp\src" />
-      <recent name="C:\Users\ksmp1\Documents\GitHub\InventApp\inventappAPI\inventapp" />
-      <recent name="C:\Users\ksmp1\Documents\GitHub\InventApp\inventappAPI" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.uco.inventapp.inventapp.repository" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dey\Downloads\inventapp\src\main\java\com\uco\inventapp\inventapp" />
+      <recent name="C:\Users\Dey\Downloads\inventapp\src\main\resources\Templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dey\Downloads\inventapp\src\main\resources" />
+      <recent name="C:\Users\Dey\Downloads\inventapp\src\main\java\com\uco\inventapp\inventapp" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.uco.inventapp.inventapp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.InventappApplication">
+    <configuration name="InventappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.uco.inventapp.inventapp.InventappApplication" />
+      <module name="inventapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uco.inventapp.inventapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTests.testCreateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="inventapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uco.inventapp.inventapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.uco.inventapp.inventapp" />
+      <option name="MAIN_CLASS_NAME" value="com.uco.inventapp.inventapp.UserRepositoryTests" />
+      <option name="METHOD_NAME" value="testCreateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.InventappApplication" />
+        <item itemvalue="JUnit.UserRepositoryTests.testCreateUser" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f719ba14-4f41-4ec9-bd17-ce8d9a703935" name="Changes" comment="" />
-      <created>1676513868133</created>
+      <changelist id="7987e2e0-ec08-4dd5-a144-a64d73d1bb36" name="Changes" comment="" />
+      <created>1677719633599</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1676513868133</updated>
+      <updated>1677719633599</updated>
     </task>
     <servers />
   </component>
