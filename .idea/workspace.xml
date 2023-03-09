@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7987e2e0-ec08-4dd5-a144-a64d73d1bb36" name="Changes" comment="" />
+    <list default="true" id="7987e2e0-ec08-4dd5-a144-a64d73d1bb36" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/InventappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/InventappApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/domain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/repository/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/uco/inventapp/inventapp/InventappApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/uco/inventapp/InventappApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +26,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,7 +56,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Dey/Downloads/inventapp/src/main/java/com/uco/inventapp/inventapp",
+    "last_opened_file_path": "C:/Users/Dey/Documents/GitHub/InventApp",
     "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
