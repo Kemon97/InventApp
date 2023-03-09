@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7987e2e0-ec08-4dd5-a144-a64d73d1bb36" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/InventappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/InventappApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/domain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/repository/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/uco/inventapp/inventapp/InventappApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/uco/inventapp/InventappApplicationTests.java" afterDir="false" />
+    <list default="true" id="edb3d967-0e70-4349-9034-0f8cd2765966" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +47,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Dey/Documents/GitHub/InventApp",
-    "project.structure.last.edited": "Facets",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dey/Documents/GitHub/InventApp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "SQL"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;SQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.uco.inventapp.inventapp.repository" />

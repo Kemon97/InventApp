@@ -1,6 +1,7 @@
-package com.uco.inventapp.inventapp.service;
+package com.uco.inventapp.service;
 
-import com.uco.inventapp.inventapp.domain.Product;
+import com.uco.inventapp.domain.Product;
+import com.uco.inventapp.repository.ProductRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import java.util.Locale;
 public class ProductService {
 
     @Autowired
-    private ProductService productService;
+    private ProductRepository productRepository;
 
     @Transactional
     public ArrayList<Product> findAll(){
@@ -25,7 +26,7 @@ public class ProductService {
     }
 
     @Transactional
-    public ArrayList<Product> getByBrand (String brand){
+    public Product getByBrand (String brand){
         return productRepository.findByBrand(brand);
     }
 
