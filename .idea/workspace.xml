@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7987e2e0-ec08-4dd5-a144-a64d73d1bb36" name="Changes" comment="product update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/domain/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7987e2e0-ec08-4dd5-a144-a64d73d1bb36" name="Changes" comment="product update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,6 +121,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677719633599</updated>
     </task>
+    <task id="LOCAL-00001" summary="product update">
+      <created>1678329957467</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678329957472</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
