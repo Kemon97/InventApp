@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7987e2e0-ec08-4dd5-a144-a64d73d1bb36" name="Changes" comment="product update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/inventapp/service/ProductService.java" afterDir="false" />
-    </list>
+    <list default="true" id="7987e2e0-ec08-4dd5-a144-a64d73d1bb36" name="Changes" comment="product update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
