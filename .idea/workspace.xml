@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edb3d967-0e70-4349-9034-0f8cd2765966" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +117,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7987e2e0-ec08-4dd5-a144-a64d73d1bb36" name="Changes" comment="" />
+      <changelist id="edb3d967-0e70-4349-9034-0f8cd2765966" name="Changes" comment="" />
       <created>1677719633599</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
