@@ -3,10 +3,12 @@ package com.uco.inventapp.inventapp.controller;
 import com.github.fge.jsonpatch.JsonPatch;
 import com.uco.inventapp.inventapp.domain.Client;
 import com.uco.inventapp.inventapp.domain.Product;
+import com.uco.inventapp.inventapp.repository.ProductRepository;
 import com.uco.inventapp.inventapp.service.ClientService;
 import com.uco.inventapp.inventapp.service.ProductService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -48,9 +50,10 @@ public class ProductController {
         productService.update(id, Product);
     }
 
-    @PatchMapping(value = "/product/{id}", consumes = "application/json-patch+json")
-    public ResponseEntity<Product> patch(@PathVariable("id") Long id, @RequestBody JsonPatch patch) {
+    @PatchMapping(value = "/product/{id}")
+    public ResponseEntity<Product> patch(@PathVariable ("id") Long id, @RequestBody JsonPatch patch) {
         return new ResponseEntity<>(productService.patch(id, patch), HttpStatus.OK);
+
     }
 
     @DeleteMapping("/product/{id}")

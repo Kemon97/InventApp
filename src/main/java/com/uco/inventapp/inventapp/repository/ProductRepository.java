@@ -12,6 +12,10 @@ import java.util.ArrayList;
     public interface ProductRepository extends CrudRepository<Product, Long> {
 
         @Query(value = "SELECT c.id as id, c.brand as brand, c.name as name, " +
+                "WHERE p.id like %?1%", nativeQuery = true)
+        Product findById(long id);
+
+        @Query(value = "SELECT c.id as id, c.brand as brand, c.name as name, " +
                 "WHERE p.name like %?1%", nativeQuery = true)
         ArrayList<Product> findByName(String name);
 
