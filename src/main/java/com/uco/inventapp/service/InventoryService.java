@@ -31,7 +31,7 @@ public class InventoryService {
     public  ArrayList<Inventory> getByFk_product(int fk_product) { return  inventoryRepository.findByFk_product(fk_product);}
 
     @Transactional
-    public  Inventory Save(Inventory inventory){
+    public  Inventory save(Inventory inventory){
         if(inventoryRepository.countByProductoCliente(inventory.getFk_client(), inventory.getFk_product())>0){
             throw new IllegalArgumentException("product already exists for customer in inventory");
         }
@@ -48,13 +48,13 @@ public class InventoryService {
     @Transactional
    public void delete(Long id){ inventoryRepository.deleteById(id);}
 
-   /* @Transactional
+    @Transactional
     public  Inventory patch(Long id, JsonPatch patch){
-        return InventoryRepository.save(
+        return inventoryRepository.save(
                 applyPatchToInventory(patch, inventoryRepository.findById(id).orElseThrow(EntityNotFoundException::new))
         );
 
-    }*/
+    }
 
     private Inventory applyPatchToInventory(JsonPatch patch, Inventory inventory) {
         try {
