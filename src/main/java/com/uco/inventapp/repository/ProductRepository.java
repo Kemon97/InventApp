@@ -24,6 +24,6 @@ import java.util.ArrayList;
 
         @Modifying
         @Query(value = "UPDATE users SET first_name = ?1, last_name = ?2, email = ?3, password = ?4 WHERE id = ?5", nativeQuery = true)
-        void updateById(String first_name, String last_name, String email, String password, long id);
+        void updateById(String name, String brand, long id);
     }
 

@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edb3d967-0e70-4349-9034-0f8cd2765966" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/uco/inventapp/service/ClientServiceTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/InventoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Inventory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/repository/InventoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/InventoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +63,8 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Dey/Documents/GitHub/InventApp&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
@@ -76,14 +87,30 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.uco.inventapp.inventapp" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.uco.inventapp.service" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.InventappApplication">
+  <component name="RunManager" selected="Application.com.uco.inventapp.InventappApplication">
     <configuration name="InventappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.uco.inventapp.inventapp.InventappApplication" />
       <module name="inventapp" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.uco.inventapp.inventapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.uco.inventapp.InventappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.uco.inventapp.InventappApplication" />
+      <module name="inventapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uco.inventapp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,6 +136,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.uco.inventapp.InventappApplication" />
         <item itemvalue="Application.InventappApplication" />
         <item itemvalue="JUnit.UserRepositoryTests.testCreateUser" />
       </list>

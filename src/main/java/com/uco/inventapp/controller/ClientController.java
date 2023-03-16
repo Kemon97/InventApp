@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
 @RestController
-@RequestMapping("api/prueba")
+@RequestMapping("api/v1")
 public class ClientController {
 
     @Autowired
