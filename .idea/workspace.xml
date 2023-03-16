@@ -5,17 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edb3d967-0e70-4349-9034-0f8cd2765966" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/uco/inventapp/service/ClientServiceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/Config/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/Config/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/Config/JwtTokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/Config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/JwtAuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/JwtRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/RedUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/repository/IRedUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/repository/InventoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/JwtServiceDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/InventoryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Inventory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/repository/InventoryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/InventoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/InventoryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
