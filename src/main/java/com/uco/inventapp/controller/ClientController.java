@@ -1,7 +1,7 @@
-package com.uco.inventapp.inventapp.controller;
+package com.uco.inventapp.controller;
 
-import com.uco.inventapp.inventapp.domain.Client;
-import com.uco.inventapp.inventapp.service.ClientService;
+import com.uco.inventapp.domain.Client;
+import com.uco.inventapp.service.ClientService;
 import com.github.fge.jsonpatch.JsonPatch;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

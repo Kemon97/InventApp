@@ -1,7 +1,7 @@
-package com.uco.inventapp.inventapp.service;
+package com.uco.inventapp.service;
 
-import com.uco.inventapp.inventapp.domain.Client;
-import com.uco.inventapp.inventapp.repository.ClientRepository;
+import com.uco.inventapp.domain.Client;
+import com.uco.inventapp.repository.ClientRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -1,6 +1,6 @@
-package com.uco.inventapp.inventapp.repository;
+package com.uco.inventapp.repository;
 
-import com.uco.inventapp.inventapp.domain.Client;
+import com.uco.inventapp.domain.Client;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

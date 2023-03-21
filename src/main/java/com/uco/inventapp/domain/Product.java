@@ -1,4 +1,4 @@
-package com.uco.inventapp.inventapp.domain;
+package com.uco.inventapp.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
