@@ -2,7 +2,8 @@ package com.uco.inventapp.controller;
 
 import java.util.Objects;
 
-import com.uco.inventapp.Config.JwtTokenUtil;
+import com.uco.inventapp.config.JwtTokenUtil;
+import com.uco.inventapp.domain.Client;
 import com.uco.inventapp.domain.JwtRequest;
 import com.uco.inventapp.domain.JwtResponse;
 import com.uco.inventapp.service.JwtUserDetailsService;
@@ -50,7 +51,7 @@ public class JwtAuthenticationController {
     }
 
     @PostMapping("/register")
-    public RedUser saveUser(@RequestBody RedUser user)  {
+    public Client saveUser(@RequestBody Client user)  {
         return userDetailsService.save(user);
     }
 

@@ -1,4 +1,4 @@
-package com.uco.inventapp.Config;
+package com.uco.inventapp.config;
 
 import java.io.Serializable;
 import java.util.Date;

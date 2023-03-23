@@ -23,10 +23,10 @@ public class JwtUserDetailsService implements UserDetailsService {
     public PasswordEncoder bcryptEncoder;
 
     @Override
-    public UserDetails loadUserByUsername(String first_name) throws UsernameNotFoundException {
-        Client user = clientRepository.findByName(first_name);
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+        Client user = clientRepository.findByEmail(email);
         if (user == null) {
-            throw new UsernameNotFoundException("User not found with username: " + first_name);
+            throw new UsernameNotFoundException("User not found with username: " + email);
         }
         return new org.springframework.security.core.userdetails.User(user.getFirstName(), user.getPassword(),
                 new ArrayList<>());

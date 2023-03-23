@@ -5,27 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edb3d967-0e70-4349-9034-0f8cd2765966" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/Config/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/Config/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/Config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/Config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/Config/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/Config/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/Config/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/Config/WebSecurityConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/JwtAuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/controller/JwtAuthenticationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/History.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Inventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/RedUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/repository/IRedUserRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/HistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/HistoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/InventoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/JwtServiceDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/JwtUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/JwtUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/JwtUserDetailsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/uco/inventapp/service/ClientServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/uco/inventapp/service/ClientServiceTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,8 +130,10 @@
       </method>
     </configuration>
     <configuration name="com.uco.inventapp.InventappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.uco.inventapp.InventappApplication" />
-      <module name="inventapp" />
+      <module name="InventApp.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.uco.inventapp.*" />
