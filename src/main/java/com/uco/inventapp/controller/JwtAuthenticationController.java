@@ -15,16 +15,14 @@ import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 
 
-@Controller
+@RestController
 @CrossOrigin
 public class JwtAuthenticationController {
 
-    @Autowired
     private AuthenticationManager authenticationManager;
 
     @Autowired
@@ -55,12 +53,12 @@ public class JwtAuthenticationController {
         return userDetailsService.save(user);
     }
 
-    private void authenticate(String username, String password) throws Exception {
-        Objects.requireNonNull(username);
+    private void authenticate(String email, String password) throws Exception {
+        Objects.requireNonNull(email);
         Objects.requireNonNull(password);
 
         try {
-            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
+            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(email, password));
         } catch (DisabledException e) {
             throw new Exception("USER_DISABLED", e);
         } catch (BadCredentialsException e) {

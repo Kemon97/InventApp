@@ -20,21 +20,21 @@ public class JwtUserDetailsService implements UserDetailsService {
     private ClientRepository clientRepository;
 
     @Autowired
-    public PasswordEncoder bcryptEncoder;
+    private PasswordEncoder bcryptEncoder;
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         Client user = clientRepository.findByEmail(email);
         if (user == null) {
-            throw new UsernameNotFoundException("User not found with username: " + email);
+            throw new UsernameNotFoundException("User not found with email: " + email);
         }
-        return new org.springframework.security.core.userdetails.User(user.getFirstName(), user.getPassword(),
+        return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(),
                 new ArrayList<>());
     }
 
-    public Client save(Client client) {
-        client.setPassword(bcryptEncoder.encode(client.getPassword()));
-        return clientRepository.save(client);
+    public Client save(Client user) {
+        user.setPassword(bcryptEncoder.encode(user.getPassword()));
+        return clientRepository.save(user);
     }
 
 }

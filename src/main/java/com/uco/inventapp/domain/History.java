@@ -1,9 +1,10 @@
 package com.uco.inventapp.domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Date;
 
 @Entity
 @Table(name = "histories")
@@ -13,6 +14,8 @@ public class History {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+        @Column(name = "id", nullable = false)
+    private Long id;
     @Column(name = "product")
     private String product;
     @Column(name = "event_type")
@@ -44,6 +47,8 @@ public class History {
         return date;
     }
 
-    public void setDate(String date) { this.date = date; }
+    public void setDate(String setDate) {
+        this.date =date;
+    }
 
 }

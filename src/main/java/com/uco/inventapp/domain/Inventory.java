@@ -1,18 +1,18 @@
 package com.uco.inventapp.domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "inventories")
+@Table(name = "inventory")
 @Getter
 @Setter
 public class Inventory {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
-    private long id;
+        @Column(name = "id", nullable = false)
+    private int id;
 
     @Column(name= "fk_client", nullable = false)
     private int fk_client;
@@ -23,15 +23,15 @@ public class Inventory {
     @Column(name = "state",nullable = false)
     private boolean state;
 
-    public Inventory(long id,int fk_client,int fk_product,boolean state){
+    public Inventory(int id,int fk_client,int fk_product,boolean state){
         this.id = id;
         this.fk_client = fk_client;
         this.fk_product = fk_product;
         this.state = state;
     }
-    public long getId() { return id;}
+    public int getId() { return id;}
 
-    public void setId(long id){this.id =id;}
+    public void setId(int id){this.id =id;}
 
     public  int getFk_client(){return  fk_client;}
 

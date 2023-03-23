@@ -8,11 +8,11 @@ import com.github.fge.jsonpatch.JsonPatchException;
 import com.uco.inventapp.domain.Client;
 import com.uco.inventapp.repository.ClientRepository;
 import jakarta.persistence.EntityNotFoundException;
+import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.Locale;
 @ExtendWith(MockitoExtension.class)
