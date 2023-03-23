@@ -5,7 +5,6 @@ import java.util.Objects;
 import com.uco.inventapp.Config.JwtTokenUtil;
 import com.uco.inventapp.domain.JwtRequest;
 import com.uco.inventapp.domain.JwtResponse;
-import com.uco.inventapp.domain.RedUser;
 import com.uco.inventapp.service.JwtUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,11 +14,12 @@ import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 
 
-@RestController
+@Controller
 @CrossOrigin
 public class JwtAuthenticationController {
 

@@ -6,13 +6,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.fge.jsonpatch.JsonPatch;
 import com.github.fge.jsonpatch.JsonPatchException;
 import com.uco.inventapp.domain.Product;
-import com.uco.inventapp.domain.Product;
 import com.uco.inventapp.repository.ProductRepository;
-import jakarta.persistence.EntityNotFoundException;
-import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.EntityNotFoundException;
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -69,7 +68,7 @@ public class ProductService {
             JsonNode patched = patch.apply(objectMapper.convertValue(person, JsonNode.class));
             return objectMapper.treeToValue(patched, Product.class);
         } catch (JsonPatchException | JsonProcessingException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Error al aplicar applyPatchToProduct");
         }
     }
 }

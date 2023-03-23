@@ -8,11 +8,11 @@ import com.github.fge.jsonpatch.JsonPatch;
 import com.github.fge.jsonpatch.JsonPatchException;
 import com.uco.inventapp.domain.Inventory;
 import com.uco.inventapp.repository.InventoryRepository;
-import jakarta.persistence.EntityNotFoundException;
-import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.EntityNotFoundException;
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 
 @Service
@@ -62,7 +62,7 @@ public class InventoryService {
             JsonNode patched = patch.apply(objectMapper.convertValue(inventory, JsonNode.class));
             return objectMapper.treeToValue(patched, Inventory.class);
         } catch (JsonPatchException | JsonProcessingException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Error al aplicar applyPatchToInventory");
         }
     }
 }

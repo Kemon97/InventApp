@@ -1,13 +1,12 @@
 package com.uco.inventapp.domain;
 
-import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import javax.persistence.*;
 
-import java.util.Date;
 
 @Entity
-@Table(name = "history")
+@Table(name = "histories")
 @Getter
 @Setter
 public class History {
@@ -45,8 +44,6 @@ public class History {
         return date;
     }
 
-    public void setDate(Date setDate) {
-        this.date =date;
-    }
+    public void setDate(String date) { this.date = date; }
 
 }
