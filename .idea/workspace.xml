@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edb3d967-0e70-4349-9034-0f8cd2765966" name="Changes" comment="">
+<<<<<<< HEAD
+=======
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/AplicationWebConfig.java" afterDir="false" />
+>>>>>>> febbd4b4cffb28766c12e4c0d38e68ca76a81439
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/InventappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/InventappApplication.java" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/JwtAuthenticationEntryPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/JwtRequestFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/JwtTokenUtil.java" afterDir="false" />
@@ -28,6 +35,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/InventoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/JwtUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/JwtUserDetailsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ProductService.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/JwtUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/JwtUserDetailsService.java" afterDir="false" />
+>>>>>>> febbd4b4cffb28766c12e4c0d38e68ca76a81439
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/uco/inventapp/service/ClientServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/uco/inventapp/service/ClientServiceTests.java" afterDir="false" />
     </list>
@@ -98,11 +110,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Dey/Desktop/inve/InventApp-Pablo&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+>>>>>>> febbd4b4cffb28766c12e4c0d38e68ca76a81439
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.uco.inventapp.inventapp.repository" />
@@ -125,7 +146,7 @@
       <recent name="com.uco.inventapp.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.uco.inventapp.InventappApplication">
+  <component name="RunManager" selected="Application.InventappApplication">
     <configuration name="InventappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.uco.inventapp.inventapp.InventappApplication" />
       <module name="inventapp" />
@@ -142,6 +163,7 @@
     <configuration name="InventappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="com.uco.inventapp.InventappApplication" />
       <module name="InventApp" />
       <extension name="coverage">
@@ -156,6 +178,10 @@
     </configuration>
     <configuration name="com.uco.inventapp.InventappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.uco.inventapp.InventappApplication" />
+=======
+      <option name="MAIN_CLASS_NAME" value="com.uco.inventapp.InventappApplication" />
+      <module name="InventApp" />
+>>>>>>> febbd4b4cffb28766c12e4c0d38e68ca76a81439
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.uco.inventapp.*" />
@@ -184,7 +210,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.uco.inventapp.InventappApplication" />
+        <item itemvalue="Application.InventappApplication" />
         <item itemvalue="Application.InventappApplication" />
         <item itemvalue="Application.InventappApplication" />
         <item itemvalue="JUnit.UserRepositoryTests.testCreateUser" />
