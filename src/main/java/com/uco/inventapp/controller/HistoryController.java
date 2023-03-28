@@ -1,8 +1,12 @@
 package com.uco.inventapp.controller;
 
+import com.github.fge.jsonpatch.JsonPatch;
+import com.uco.inventapp.domain.Client;
 import com.uco.inventapp.domain.History;
 import com.uco.inventapp.service.HistoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -31,5 +35,10 @@ public class HistoryController {
 
         return historyService.getByDate(date);
 }
+
+    @PatchMapping(value = "/history/{id}", consumes = "application/json-patch+json")
+    public ResponseEntity<History> patch(@PathVariable("id") Long id, @RequestBody JsonPatch patch) {
+        return new ResponseEntity<>(historyService.patch(id, patch), HttpStatus.OK);
+    }
 
 }

@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.fge.jsonpatch.JsonPatch;
 import com.github.fge.jsonpatch.JsonPatchException;
+import com.uco.inventapp.domain.Client;
 import com.uco.inventapp.domain.Inventory;
 import com.uco.inventapp.repository.InventoryRepository;
 import javax.persistence.EntityNotFoundException;
@@ -14,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 @Service
 public class InventoryService {
@@ -25,10 +27,12 @@ public class InventoryService {
     public  ArrayList<Inventory> findAll() { return (ArrayList<Inventory>) inventoryRepository.findAll();}
 
     @Transactional
-    public ArrayList<Inventory> getByFk_client(int fk_client) { return inventoryRepository.findByFk_client(fk_client);}
+    public ArrayList<Inventory> get(String fkcli) {
+        return inventoryRepository.findByFk_client(fkcli.toUpperCase(Locale.ROOT));
+    }
 
     @Transactional
-    public  ArrayList<Inventory> getByFk_product(int fk_product) { return  inventoryRepository.findByFk_product(fk_product);}
+    public  Inventory getByFk_product(String fk_product) { return  inventoryRepository.findByFk_product(fk_product);}
 
     @Transactional
     public  Inventory save(Inventory inventory){
@@ -39,10 +43,9 @@ public class InventoryService {
     }
 
     @Transactional
-    public  void update(int id,Inventory inventoryDomain){
+    public  void update(long id,Inventory inventoryDomain){
         if(inventoryRepository.findById(id).isEmpty()) throw new EntityNotFoundException();
         inventoryRepository.updateById(inventoryDomain.getFk_client(),inventoryDomain.getFk_product(),inventoryDomain.get_State(),id);
-        inventoryRepository.updateByIdState(inventoryDomain.get_State(),id);
     }
 
     @Transactional
@@ -65,4 +68,5 @@ public class InventoryService {
             throw new RuntimeException(e);
         }
     }
+
 }

@@ -14,7 +14,6 @@
 	<name>inventapp</name>
 	<description>Proyecto para la asignatura de Ing. de Software 3</description>
 	<properties>
-		<hibernate.version>6.1.4.Final</hibernate.version>
 		<java.version>17</java.version>
 	</properties>
 
@@ -133,12 +132,6 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 		</dependency>
@@ -147,7 +140,12 @@
 			<artifactId>java-jwt</artifactId>
 			<version>4.3.0</version>
 		</dependency>
-
+		<dependency>
+			<groupId>jakarta.validation</groupId>
+			<artifactId>jakarta.validation-api</artifactId>
+			<version>3.0.2</version>
+			<scope>provided</scope>
+		</dependency>
 
 	</dependencies>
 

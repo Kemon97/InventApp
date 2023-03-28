@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
 @RestController
-@RequestMapping("api/prueba")
+@RequestMapping("api/v1")
 public class InventoryController {
 
     @Autowired
     private InventoryService inventoryService;
 
     @GetMapping("/inventory")
-    public ArrayList<Inventory> get(@RequestParam(required = true) int fk_client){
-        return  inventoryService.getByFk_client(fk_client);
+    public ArrayList<Inventory> get(@RequestParam(required = true) String fk_client){
+        return  inventoryService.get(fk_client);
     }
 
     @GetMapping("/inventory/all")
