@@ -7,6 +7,10 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
+@EnableJpaRepositories("com.uco.inventapp.repository")
+@ComponentScan(basePackages = { "com.uco.inventapp" })
+@EntityScan("com.uco.inventapp.domain")
+@EnableWebMvc
 @SpringBootApplication
 public class InventappApplication {
 

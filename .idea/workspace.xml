@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edb3d967-0e70-4349-9034-0f8cd2765966" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/AplicationWebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/InventappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/InventappApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/config/JwtRequestFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/JwtUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/JwtUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/uco/inventapp/service/ClientServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/uco/inventapp/service/ClientServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/domain/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/HistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/HistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/InventoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uco/inventapp/service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,13 +110,13 @@
       <recent name="com.uco.inventapp.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.uco.inventapp.InventappApplication (1)">
+  <component name="RunManager" selected="Application.InventappApplication">
     <configuration name="InventappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.uco.inventapp.inventapp.InventappApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.uco.inventapp.InventappApplication" />
       <module name="inventapp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.uco.inventapp.inventapp.*" />
+          <option name="PATTERN" value="com.uco.inventapp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,34 +129,6 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.uco.inventapp.InventappApplication" />
       <module name="InventApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.uco.inventapp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.uco.inventapp.InventappApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.uco.inventapp.InventappApplication" />
-      <module name="inventapp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.uco.inventapp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.uco.inventapp.InventappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.uco.inventapp.InventappApplication" />
-      <module name="InventApp.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.uco.inventapp.*" />
@@ -185,10 +155,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.InventappApplication" />
+      <item itemvalue="JUnit.UserRepositoryTests.testCreateUser" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.uco.inventapp.InventappApplication (1)" />
-        <item itemvalue="Application.com.uco.inventapp.InventappApplication" />
         <item itemvalue="Application.InventappApplication" />
         <item itemvalue="Application.InventappApplication" />
         <item itemvalue="JUnit.UserRepositoryTests.testCreateUser" />
