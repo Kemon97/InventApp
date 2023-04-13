@@ -1,6 +1,6 @@
 package com.uco.inventapp.domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,8 +11,7 @@ import lombok.Setter;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
-
+        @Column(name = "id", nullable = false)
     private long id;
 
     @Column (name="brand")

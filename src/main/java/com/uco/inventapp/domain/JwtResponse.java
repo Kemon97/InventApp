@@ -1,3 +1,4 @@
+
 package com.uco.inventapp.domain;
 
 import java.io.Serializable;

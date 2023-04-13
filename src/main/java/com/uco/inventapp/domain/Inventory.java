@@ -1,45 +1,48 @@
 package com.uco.inventapp.domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "inventory")
+@Table(name = "inventories")
 @Getter
 @Setter
 public class Inventory {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
-    private int id;
+        @Column(name = "id", nullable = false)
+    private Long id;
 
-    @Column(name= "fk_client", nullable = false)
-    private int fk_client;
+    @Column(name= "fk_client")
+    private String fk_client;
 
-    @Column(name = "fk_product", nullable = false)
-    private int fk_product;
+    @Column(name = "fk_product")
+    private String fk_product;
 
-    @Column(name = "state",nullable = false)
+    @Column(name = "state")
     private boolean state;
 
-    public Inventory(int id,int fk_client,int fk_product,boolean state){
+    public Inventory() {
+    }
+
+    public Inventory(Long id,String fk_client,String fk_product,boolean state){
         this.id = id;
         this.fk_client = fk_client;
         this.fk_product = fk_product;
         this.state = state;
     }
-    public int getId() { return id;}
+    public Long getId() { return id;}
 
-    public void setId(int id){this.id =id;}
+    public void setId(Long id){this.id =id;}
 
-    public  int getFk_client(){return  fk_client;}
+    public String getFk_client(){return  fk_client;}
 
-    public void setFk_client(int fk_client){this.fk_client = fk_client;}
+    public void setFk_client(String fk_client){this.fk_client = fk_client;}
 
-    public  int getFk_product(){return  fk_product;}
+    public String getFk_product(){return  fk_product;}
 
-    public void setFk_product(int fk_product){this.fk_product = fk_product;}
+    public void setFk_product(String fk_product){this.fk_product = fk_product;}
 
     public  boolean get_State(){return state;}
 

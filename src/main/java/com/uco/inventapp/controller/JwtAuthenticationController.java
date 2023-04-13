@@ -1,11 +1,12 @@
+
 package com.uco.inventapp.controller;
 
 import java.util.Objects;
 
-import com.uco.inventapp.Config.JwtTokenUtil;
+import com.uco.inventapp.config.JwtTokenUtil;
+import com.uco.inventapp.domain.Client;
 import com.uco.inventapp.domain.JwtRequest;
 import com.uco.inventapp.domain.JwtResponse;
-import com.uco.inventapp.domain.RedUser;
 import com.uco.inventapp.service.JwtUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -35,14 +36,15 @@ public class JwtAuthenticationController {
     @Autowired
     private UserDetailsService jwtInMemoryUserDetailsService;
 
+
     @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
     public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest)
             throws Exception {
 
-        authenticate(authenticationRequest.getUsername(), authenticationRequest.getPassword());
+        authenticate(authenticationRequest.getEmail(), authenticationRequest.getPassword());
 
         final UserDetails userDetails = userDetailsService
-                .loadUserByUsername(authenticationRequest.getUsername());
+                .loadUserByUsername(authenticationRequest.getEmail());
 
         final String token = jwtTokenUtil.generateToken(userDetails);
 
@@ -50,16 +52,16 @@ public class JwtAuthenticationController {
     }
 
     @PostMapping("/register")
-    public RedUser saveUser(@RequestBody RedUser user)  {
+    public Client saveUser(@RequestBody Client user)  {
         return userDetailsService.save(user);
     }
 
-    private void authenticate(String username, String password) throws Exception {
-        Objects.requireNonNull(username);
+    private void authenticate(String email, String password) throws Exception {
+        Objects.requireNonNull(email);
         Objects.requireNonNull(password);
 
         try {
-            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
+            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(email, password));
         } catch (DisabledException e) {
             throw new Exception("USER_DISABLED", e);
         } catch (BadCredentialsException e) {

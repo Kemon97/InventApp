@@ -14,7 +14,6 @@ public interface HistoryRepository extends CrudRepository<History, Long> {
     @Query(value = "SELECT c.product as product, c.event_type as event_type, c.date as date, " +
             "WHERE p.product like %?1%", nativeQuery = true)
     ArrayList<History> findByProduct(String product);
-
     @Query(value = "SELECT c.product as product, c.event_type as event_type, c.date as date, " +
             "WHERE p.product like %?1%", nativeQuery = true)
     History findByDate(String date);

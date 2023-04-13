@@ -1,4 +1,5 @@
-package com.uco.inventapp.Config;
+
+package com.uco.inventapp.config;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -26,10 +27,6 @@ public class JwtTokenUtil implements Serializable {
 
     public String getUsernameFromToken(String token) {
         return getClaimFromToken(token, Claims::getSubject);
-    }
-
-    public Date getIssuedAtDateFromToken(String token) {
-        return getClaimFromToken(token, Claims::getIssuedAt);
     }
 
     public Date getExpirationDateFromToken(String token) {

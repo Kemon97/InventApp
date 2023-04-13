@@ -1,24 +1,26 @@
 package com.uco.inventapp.domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Date;
 
 @Entity
-@Table(name = "history")
+@Table(name = "histories")
 @Getter
 @Setter
 public class History {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+        @Column(name = "id", nullable = false)
+    private Long id;
     @Column(name = "product")
     private String product;
     @Column(name = "event_type")
     private String event_type;
-    @Column(name = "date")
+    @Column(name = "fecha")
     private String date;
     public History() {
     }
@@ -45,7 +47,7 @@ public class History {
         return date;
     }
 
-    public void setDate(Date setDate) {
+    public void setDate(String setDate) {
         this.date =date;
     }
 

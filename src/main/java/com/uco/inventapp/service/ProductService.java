@@ -6,10 +6,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.fge.jsonpatch.JsonPatch;
 import com.github.fge.jsonpatch.JsonPatchException;
 import com.uco.inventapp.domain.Product;
-import com.uco.inventapp.domain.Product;
 import com.uco.inventapp.repository.ProductRepository;
-import jakarta.persistence.EntityNotFoundException;
-import jakarta.transaction.Transactional;
+import javax.persistence.EntityNotFoundException;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -63,10 +62,10 @@ public class ProductService {
                         .orElseThrow(EntityNotFoundException::new)));
     }
 
-    private Product applyPatchToProduct(JsonPatch patch, Product person) {
+    private Product applyPatchToProduct(JsonPatch patch, Product producto) {
         try {
             var objectMapper = new ObjectMapper();
-            JsonNode patched = patch.apply(objectMapper.convertValue(person, JsonNode.class));
+            JsonNode patched = patch.apply(objectMapper.convertValue(producto, JsonNode.class));
             return objectMapper.treeToValue(patched, Product.class);
         } catch (JsonPatchException | JsonProcessingException e) {
             throw new RuntimeException(e);
