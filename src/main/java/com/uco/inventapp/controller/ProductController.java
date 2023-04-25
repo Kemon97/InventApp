@@ -44,8 +44,8 @@ public class ProductController {
 
     @PutMapping("/product/{id}")
     public void update(@PathVariable("id") Long id,
-                       @Valid @RequestBody Product Product) {
-        productService.update(id, Product);
+                       @Valid @RequestBody Product product) {
+        productService.update(id, product);
     }
 
     @PatchMapping(value = "/product/{id}", consumes = "application/json-patch+json")

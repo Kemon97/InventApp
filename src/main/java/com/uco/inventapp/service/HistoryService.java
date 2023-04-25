@@ -51,7 +51,7 @@ public class HistoryService {
             JsonNode patched = patch.apply(objectMapper.convertValue(historial, JsonNode.class));
             return objectMapper.treeToValue(patched, History.class);
         } catch (JsonPatchException | JsonProcessingException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Error al aplicar PATCH a la entidad HISTORIAL");
         }
     }
 

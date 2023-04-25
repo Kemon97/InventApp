@@ -37,14 +37,14 @@ public class ClientController {
 
     @PostMapping("/client")
     @ResponseStatus(HttpStatus.CREATED)
-    public Client create(@RequestBody Client user) {
-        return clientService.save(user);
+    public Client create(@RequestBody Client client) {
+        return clientService.save(client);
     }
 
     @PutMapping("/client/{id}")
     public void update(@PathVariable("id") Long id,
-                       @Valid @RequestBody Client Client) {
-        clientService.update(id, Client);
+                       @Valid @RequestBody Client client) {
+        clientService.update(id, client);
     }
 
     @PatchMapping(value = "/client/{id}", consumes = "application/json-patch+json")

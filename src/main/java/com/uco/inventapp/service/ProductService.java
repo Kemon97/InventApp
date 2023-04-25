@@ -62,13 +62,13 @@ public class ProductService {
                         .orElseThrow(EntityNotFoundException::new)));
     }
 
-    private Product applyPatchToProduct(JsonPatch patch, Product producto) {
+    private Product applyPatchToProduct(JsonPatch patch, Product product) {
         try {
             var objectMapper = new ObjectMapper();
-            JsonNode patched = patch.apply(objectMapper.convertValue(producto, JsonNode.class));
+            JsonNode patched = patch.apply(objectMapper.convertValue(product, JsonNode.class));
             return objectMapper.treeToValue(patched, Product.class);
         } catch (JsonPatchException | JsonProcessingException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Error al aplicar el PATCH en la entidad PRODUCTO");
         }
     }
 }
