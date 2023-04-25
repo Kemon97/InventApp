@@ -9,6 +9,8 @@ import com.uco.inventapp.domain.Product;
 import com.uco.inventapp.repository.ProductRepository;
 import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
+import com.uco.inventapp.util.MessageSender;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +22,12 @@ public class ProductService {
 
     @Autowired
     private ProductRepository productRepository;
+
+    private final MessageSender<Product> messageSenderProduct;
+
+    public ProductService(MessageSender<Product> messageSenderProduct) {
+        this.messageSenderProduct = messageSenderProduct;
+    }
 
     @Transactional
     public ArrayList<Product> findAll(){
@@ -41,6 +49,7 @@ public class ProductService {
         if (productRepository.countByEmail(product.getName()) > 0) {
             throw new IllegalArgumentException("Product already exits");
         }
+        messageSenderProduct.execute(product,product.getBrand().toString());
         return productRepository.save(product);
     }
 

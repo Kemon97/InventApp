@@ -11,7 +11,6 @@ import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.uco.inventapp.util.MessageSender;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -21,13 +20,6 @@ public class ClientService {
 
     @Autowired
     private ClientRepository clientRepository;
-
-    private final MessageSender<Client> messageSenderClient;
-
-    public ClientService(MessageSender<Client> messageSenderClient) {
-        this.messageSenderClient = messageSenderClient;
-    }
-
 
     @Transactional
     public ArrayList<Client> findAll() {
@@ -50,7 +42,6 @@ public class ClientService {
         if (clientRepository.countByEmail(person.getEmail()) > 0) {
             throw new IllegalArgumentException("email already exits");
         }
-        messageSenderClient.execute(person,person.getId().toString());
         return clientRepository.save(person);
     }
 

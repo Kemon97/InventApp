@@ -1,7 +1,7 @@
-package com.uco.inventapp.mensajeria.client;
+package com.uco.inventapp.mensajeria;
 
 import com.uco.inventapp.config.ClientQueueConfig;
-import com.uco.inventapp.domain.Client;
+import com.uco.inventapp.domain.Product;
 import com.uco.inventapp.util.MessageSender;
 import com.uco.inventapp.util.gson.MapperJsonObjeto;
 import org.springframework.amqp.core.Message;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 import java.util.Optional;
 
 @Component
-public class MessageSenderBroker implements MessageSender<Client> {
+public class MessageSenderBroker implements MessageSender<Product> {
 
     private final RabbitTemplate rabbitTemplate;
     private final MapperJsonObjeto mapperJsonObjeto;
@@ -27,7 +27,7 @@ public class MessageSenderBroker implements MessageSender<Client> {
     }
 
     @Override
-    public void execute(Client message, String idMessage) {
+    public void execute(Product message, String idMessage) {
         MessageProperties propiedadesMensaje = generarPropiedadesMensaje(idMessage);
 
         Optional<Message> cuerpoMensaje = obtenerCuerpoMensaje(message, propiedadesMensaje);
