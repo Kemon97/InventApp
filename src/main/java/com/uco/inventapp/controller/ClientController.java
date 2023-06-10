@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 
+@CrossOrigin(origins="http://localhost:4200")
 @RestController
 @RequestMapping("api/v1")
 public class ClientController {
@@ -33,6 +34,11 @@ public class ClientController {
     @GetMapping("/client/all")
     public ArrayList<Client> get() {
         return clientService.findAll();
+    }
+
+    @GetMapping("/client/login/{email}/{pass}")
+    public String getLogin(@PathVariable("email") String email,@PathVariable("pass") String pass) {
+        return clientService.getLogin(email,pass);
     }
 
     @PostMapping("/client")

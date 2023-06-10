@@ -24,6 +24,9 @@ public interface ClientRepository extends CrudRepository<Client, Long> {
     @Query(value = "SELECT count(1) FROM users c WHERE c.email = ?1", nativeQuery = true)
     int countByEmail(String email);
 
+    @Query(value = "SELECT c.id FROM users c WHERE c.email = ? AND c.password = ?", nativeQuery = true)
+    int countByLogin(String email,String pass);
+
     @Modifying
     @Query(value = "UPDATE users SET first_name = ?1, last_name = ?2, email = ?3, password = ?4 WHERE id = ?5", nativeQuery = true)
     void updateById(String first_name, String last_name, String email, String password, long id);

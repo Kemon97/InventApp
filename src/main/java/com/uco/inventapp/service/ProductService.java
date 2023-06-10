@@ -45,6 +45,12 @@ public class ProductService {
     }
 
     @Transactional
+    public Product getProductById(Long id) {
+        return productRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Product not found with id: " + id));
+    }
+
+    @Transactional
     public Product save(Product product) {
         if (productRepository.countByEmail(product.getName()) > 0) {
             throw new IllegalArgumentException("Product already exits");
@@ -80,5 +86,13 @@ public class ProductService {
             throw new RuntimeException("Error al aplicar el PATCH en la entidad PRODUCTO");
         }
     }
+
+    @Transactional
+    public Product updateProductQuantity(Long id, Integer newQuantity) {
+        Product product = getProductById(id);
+        product.setQuantity(newQuantity);
+        return productRepository.save(product);
+    }
 }
+
 

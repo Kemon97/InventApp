@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
         @Column(name = "id", nullable = false)
     private long id;
 
@@ -19,14 +19,18 @@ public class Product {
     @Column (name="name")
     private String name;
 
+    @Column (name="quantity")
+    private int quantity;
+
     public Product(){
 
     }
 
-    public Product(long id, String brand, String name){
+    public Product(long id, String brand, String name, int quantity){
         this.id = id;
         this.brand = brand;
         this.name = name;
+        this.quantity = quantity;
     }
 
     public long getId() {
@@ -53,4 +57,8 @@ public class Product {
     public void setName(String name) {
         this.name = name;
     }
+
+    public int getQuantity() { return quantity; }
+
+    public void setQuantity (int quantity) { this.quantity = quantity; }
 }

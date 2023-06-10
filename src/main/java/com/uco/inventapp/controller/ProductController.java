@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
 import java.util.ArrayList;
+import java.util.Map;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("api/v1")
 public class ProductController {
@@ -46,6 +48,21 @@ public class ProductController {
     public void update(@PathVariable("id") Long id,
                        @Valid @RequestBody Product product) {
         productService.update(id, product);
+    }
+
+    @PutMapping("product/{id}/quantity")
+    public ResponseEntity<?> updateProductQuantity(@PathVariable Long id, @RequestBody Map<String, Integer> quantityMap) {
+        Integer newQuantity = quantityMap.get("quantity");
+        if (newQuantity != null) {
+            try {
+                Product product = productService.updateProductQuantity(id, newQuantity);
+                return ResponseEntity.ok(product);
+            } catch (RuntimeException e) {
+                return ResponseEntity.notFound().build();
+            }
+        } else {
+            return ResponseEntity.badRequest().build();
+        }
     }
 
     @PatchMapping(value = "/product/{id}", consumes = "application/json-patch+json")

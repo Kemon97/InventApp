@@ -36,6 +36,15 @@ public class ClientService {
         return clientRepository.findByEmail(email);
     }
 
+    @Transactional
+    public String getLogin(String email,String pass){
+        if(clientRepository.countByLogin(email,pass)>0){
+            return "123";
+        }else{
+            return "";
+        }
+
+    }
 
     @Transactional
     public Client save(Client person) {
